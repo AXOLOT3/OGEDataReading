@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jr1108556\\Desktop\\OGEDataReading\\OGEDataReading.csproj": {}
+    "c:\\Users\\jr1108556\\Desktop\\OGEDataReading\\OGEDataReading.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jr1108556\\Desktop\\OGEDataReading\\OGEDataReading.csproj": {
+    "c:\\Users\\jr1108556\\Desktop\\OGEDataReading\\OGEDataReading.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jr1108556\\Desktop\\OGEDataReading\\OGEDataReading.csproj",
+        "projectUniqueName": "c:\\Users\\jr1108556\\Desktop\\OGEDataReading\\OGEDataReading.csproj",
         "projectName": "OGEDataReading",
-        "projectPath": "C:\\Users\\jr1108556\\Desktop\\OGEDataReading\\OGEDataReading.csproj",
+        "projectPath": "c:\\Users\\jr1108556\\Desktop\\OGEDataReading\\OGEDataReading.csproj",
         "packagesPath": "C:\\Users\\jr1108556\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jr1108556\\Desktop\\OGEDataReading\\obj\\",
+        "outputPath": "c:\\Users\\jr1108556\\Desktop\\OGEDataReading\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
