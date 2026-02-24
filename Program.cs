@@ -1,5 +1,6 @@
 ﻿namespace OGEDataReading;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 
 class Program
 {
@@ -14,8 +15,37 @@ class Program
         var inactiveCount = from val in FinalList
                             where val.CloudLifecycle.Equals("inactive")
                             select val;
-                               
+
         Console.WriteLine(inactiveCount.Count());
+
+        var InactiveNames = from val in FinalList
+                            where val.CloudLifecycle.Equals("inactive")
+                            orderby val.DisplayName ascending
+                            select val.DisplayName;
+
+
+        List<string> namelist = new List<string>();
+
+        for (int i = 0; i < namelist.Count(); i++)
+        {
+            foreach (var val in InactiveNames)
+            {
+                foreach (var test in namelist)
+                {
+                    if (test == val)
+                    {
+                        break;
+                    }
+                }
+                Console.WriteLine(val);
+
+                namelist.Add(val);
+            }
+
+
+        }
+
+        
                             
 
 
