@@ -4,8 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        List<IdentityData> AllIdentities = new List<IdentityData>();
-        read($"{System.AppDomain.CurrentDomain.BaseDirectory}\\Francis Tuttle Identities_Basic_ForDataPt1.csv");
+        List<IdentityData> FinalList = read($"{System.AppDomain.CurrentDomain.BaseDirectory}\\Francis Tuttle Identities_Basic_ForDataPt1.csv");
+        Console.WriteLine(FinalList.Count);
+        Console.WriteLine(FinalList[0].FirstName);
 
     }
 
@@ -39,13 +40,13 @@ class Program
         public string AccessDisplayName { get; set; }
         public string AccessDescription { get; set; }
     }
-    public List<IdentityData> read(string fileName)
+    public static List<IdentityData> read(string fileName)
     {
         List<IdentityData> AllIdentities = new List<IdentityData>();
 
         string? line;
        
-        StreamReader sr = new StreamReader(fileName);
+        using StreamReader sr = new StreamReader(fileName);
 
 
         List<string[]> lineList = new List<string[]>();
@@ -66,15 +67,12 @@ class Program
                 var p1 = new IdentityData(temporary[0], temporary[1], temporary[2], temporary[3],temporary[4], temporary[5], temporary[6],
                  temporary[7], temporary[8], temporary[9], temporary[10], temporary[11], temporary[12], temporary[13]);
 
- 
-                List<IdentityData> data = [p1];
                 AllIdentities.Add(p1);
             }
             lineList.Add(temporary);
             line = sr.ReadLine();
             x++;
         }
-
         sr.Close();
         return AllIdentities;
     }
