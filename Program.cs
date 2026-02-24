@@ -6,7 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        List<IdentityData> FinalList = read($"{System.AppDomain.CurrentDomain.BaseDirectory}\\Francis Tuttle Identities_Basic_ForDataPt1.csv");
+        List<IdentityData> FinalList = read($"{System.AppDomain.CurrentDomain.BaseDirectory}\\Francis Tuttle Identities_Basic.csv");
         Console.WriteLine(FinalList.Count);
         Console.WriteLine(FinalList[0].FirstName);
 
@@ -18,35 +18,18 @@ class Program
 
         Console.WriteLine(inactiveCount.Count());
 
-        var InactiveNames = from val in FinalList
+        var InactiveNames = (from val in FinalList
                             where val.CloudLifecycle.Equals("inactive")
                             orderby val.DisplayName ascending
-                            select val.DisplayName;
+                            select val.DisplayName).Distinct();
 
-
-        List<string> namelist = new List<string>();
-
-        for (int i = 0; i < namelist.Count(); i++)
+        foreach(var val in InactiveNames)
         {
-            foreach (var val in InactiveNames)
-            {
-                foreach (var test in namelist)
-                {
-                    if (test == val)
-                    {
-                        break;
-                    }
-                }
-                Console.WriteLine(val);
-
-                namelist.Add(val);
-            }
-
-
+            Console.WriteLine(val);
         }
 
-        
-                            
+
+                  
 
 
 
