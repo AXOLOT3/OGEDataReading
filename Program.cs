@@ -1,4 +1,5 @@
 ﻿namespace OGEDataReading;
+using System.Linq;
 
 class Program
 {
@@ -7,6 +8,19 @@ class Program
         List<IdentityData> FinalList = read($"{System.AppDomain.CurrentDomain.BaseDirectory}\\Francis Tuttle Identities_Basic_ForDataPt1.csv");
         Console.WriteLine(FinalList.Count);
         Console.WriteLine(FinalList[0].FirstName);
+
+
+
+        var inactiveCount = from val in FinalList
+                            where val.CloudLifecycle.Equals("inactive")
+                            select val;
+                               
+        Console.WriteLine(inactiveCount.Count());
+                            
+
+
+
+
 
     }
 
