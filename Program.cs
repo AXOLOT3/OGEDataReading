@@ -29,6 +29,14 @@ class Program
         }
 
 
+        var InactiveNames2 = (from val in FinalList
+                            where val.CloudLifecycle.Equals("inactive")
+                            orderby val.DisplayName.Distinct() ascending
+                            select val).Distinct();
+        
+        Dictionary<string, List<IdentityData>> InactiveDict = new Dictionary<string, List<IdentityData>>();
+
+
                   
 
 
