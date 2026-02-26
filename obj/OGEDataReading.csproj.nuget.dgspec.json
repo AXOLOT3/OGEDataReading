@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\jr1108556\\Documents\\GitHub\\OGEDataReading\\OGEDataReading.csproj": {}
+    "C:\\Users\\jr1108556\\Desktop\\OGEdataread2\\OGEDataReading\\OGEDataReading.csproj": {}
   },
   "projects": {
-    "c:\\Users\\jr1108556\\Documents\\GitHub\\OGEDataReading\\OGEDataReading.csproj": {
+    "C:\\Users\\jr1108556\\Desktop\\OGEdataread2\\OGEDataReading\\OGEDataReading.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\jr1108556\\Documents\\GitHub\\OGEDataReading\\OGEDataReading.csproj",
+        "projectUniqueName": "C:\\Users\\jr1108556\\Desktop\\OGEdataread2\\OGEDataReading\\OGEDataReading.csproj",
         "projectName": "OGEDataReading",
-        "projectPath": "c:\\Users\\jr1108556\\Documents\\GitHub\\OGEDataReading\\OGEDataReading.csproj",
+        "projectPath": "C:\\Users\\jr1108556\\Desktop\\OGEdataread2\\OGEDataReading\\OGEDataReading.csproj",
         "packagesPath": "C:\\Users\\jr1108556\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\jr1108556\\Documents\\GitHub\\OGEDataReading\\obj\\",
+        "outputPath": "C:\\Users\\jr1108556\\Desktop\\OGEdataread2\\OGEDataReading\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
